@@ -20,7 +20,7 @@ async function databaseConnection() {
 databaseConnection();
 
 const app = express(),
-  port = process.env.PORT || 3300;
+  port = process.env.PORT || 3000;
 
 app.use(express.json());
 
