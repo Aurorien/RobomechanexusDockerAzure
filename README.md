@@ -12,7 +12,7 @@ https://github.com/Aurorien/RobomechanexusDockerAzure.git
 
 Run all following commands in the root folder where the compose.yaml is located.<br>
 
-## To initialze the database with the primordial data:<br>
+## To initialze the database with the primordial data:
 
 1. Run to start up the containers:<br>
    docker compose up
@@ -24,7 +24,7 @@ Run all following commands in the root folder where the compose.yaml is located.
 1. Execute the init.sql script in the database container:<br>
    docker compose exec database psql --username=postgres -d postgres -a -f /docker-entrypoint-initdb.d/init.sql
 
-## To reset your database to primordial state:<br>
+## To reset your database to primordial state:
 
 1. Close containers:<br>
    docker compose down
