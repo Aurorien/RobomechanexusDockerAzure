@@ -1,15 +1,18 @@
-#Published website on cloud service Azure:
+# Published website on cloud service Azure:
+
 http://108.142.200.49/
 
-#Link/Clone-URL to GitHub-repository:
+# Link/Clone-URL to GitHub-repository:
+
 https://github.com/Aurorien/RobomechanexusDockerAzure.git
 
-#Populate database with primordial data
+# Populate database with primordial data
+
 (Note: you might need to add sudo in front of all the following commands)
 
 Run all following commands in the root folder where the compose.yaml is located.
 
-##To initialze the database with the primordial data:
+## To initialze the database with the primordial data:
 
 1. Run to start up the containers:
    docker compose up
@@ -21,7 +24,7 @@ Run all following commands in the root folder where the compose.yaml is located.
 1. Execute the init.sql script in the database container:
    docker compose exec database psql --username=postgres -d postgres -a -f /docker-entrypoint-initdb.d/init.sql
 
-#To reset your database to primordial state:
+## To reset your database to primordial state:
 
 1. Close containers:
    docker compose down
