@@ -3,7 +3,7 @@ FROM node:14 as build
 
 WORKDIR /app
 COPY . ./
-RUN NODE_ENV=development npm install
+RUN npm install
 RUN npm run build
 
 # Stage 2: Serve frontend with NGINX
