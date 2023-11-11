@@ -4,6 +4,8 @@ FROM node:14 as build
 WORKDIR /app
 COPY . ./
 RUN npm install
+
+WORKDIR /app/build
 RUN npm run build
 
 # Stage 2: Serve frontend with NGINX
