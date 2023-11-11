@@ -2,7 +2,7 @@
 FROM node:14 as build
 
 WORKDIR /app
-COPY package*.json ./
+COPY package.json ./
 RUN NODE_ENV=development npm install
 COPY . .
 RUN npm run build
