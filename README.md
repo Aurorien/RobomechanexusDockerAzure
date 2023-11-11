@@ -32,17 +32,17 @@ Run all following commands in the root folder where the compose.yaml is located.
 2. Clear volume folder data:
    sudo rm -rf ./data
 
-If that doesn't work, check ownership of the ./data folder:
-s -ld ./data
+   If that doesn't work, check ownership of the ./data folder:
+   s -ld ./data
 
-and if it shows owner that is not you e.g. drwx------ 19 systemd-timesync, change ownership to your user:
-sudo chown -R yourUsername:yourUsername ./data
+   and if it shows owner that is not you e.g. drwx------ 19 systemd-timesync, change ownership to your user:
+   sudo chown -R yourUsername:yourUsername ./data
 
-Then run:
-sudo rm -rf ./data
+   Then run:
+   sudo rm -rf ./data
 
-Check that ./data is cleared:
-sudo ls ./data
+   Check that ./data is cleared:
+   sudo ls ./data
 
 3. Containers up:
    docker compose up
