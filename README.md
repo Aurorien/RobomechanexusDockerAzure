@@ -1,8 +1,8 @@
-# Published website on cloud service Azure:<br>
+# Published website on cloud service Azure:
 
 http://108.142.200.49/
 
-# Link/Clone-URL to GitHub-repository:<br>
+# Link/Clone-URL to GitHub-repository:
 
 https://github.com/Aurorien/RobomechanexusDockerAzure.git
 
@@ -35,7 +35,7 @@ Run all following commands in the root folder where the compose.yaml is located.
    If that doesn't work, check ownership of the ./data folder:<br>
    s -ld ./data
 
-   and if it shows owner that is not you e.g. drwx------ 19 systemd-timesync, change ownership to your user:<br>
+   And if it shows owner that is not you e.g. drwx------ 19 systemd-timesync, change ownership to your user:<br>
    sudo chown -R yourUsername:yourUsername ./data
 
    Then run:<br>
