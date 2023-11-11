@@ -2,10 +2,9 @@
 FROM node:14 as build
 
 WORKDIR /app
-COPY . ./
+COPY package*.json ./
 RUN npm install
-
-WORKDIR /app/build
+COPY . .
 RUN npm run build
 
 # Stage 2: Serve frontend with NGINX
