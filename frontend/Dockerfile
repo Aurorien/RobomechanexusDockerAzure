@@ -3,10 +3,10 @@ FROM node:14 as build
 
 WORKDIR /app
 COPY package*.json ./app/
-RUN echo "Files after copying package.json:" && ls -al
+RUN  ls -al /app
 RUN NODE_ENV=development npm install
 COPY . ./
-RUN echo "Files after copying the entire project:" && ls -al
+RUN ls -al /app
 RUN npm run build
 
 # Stage 2: Serve frontend with NGINX
