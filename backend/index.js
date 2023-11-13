@@ -24,7 +24,7 @@ const app = express(),
 
 app.use(express.json());
 
-app.get("/api", async (_request, response) => {
+app.get("/", async (_request, response) => {
   try {
     const sql =
       "SELECT chip.chipId, chip.chipName, chip.chipUse, item_type.itemTypeName FROM chip INNER JOIN item_type ON chip.chipItemTypeId=item_type.itemTypeId ";
@@ -36,7 +36,7 @@ app.get("/api", async (_request, response) => {
   }
 });
 
-app.post("/api/post", async (_request, response) => {
+app.post("/post", async (_request, response) => {
   try {
     console.log("Received JSON data from frontend:", _request.body);
     const { name, use, type } = _request.body;
