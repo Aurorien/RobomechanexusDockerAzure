@@ -7,8 +7,6 @@ services:
       interval: 1s
       test: 'pg_isready --username=postgres'
     image: postgres
-    command: >
-      /bin/bash -c "echo 'listen_addresses='*' >> /var/lib/postgresql/data/postgresql.conf && docker-entrypoint.sh postgres"
     volumes:
       - ./data:/var/lib/postgresql/data
 
