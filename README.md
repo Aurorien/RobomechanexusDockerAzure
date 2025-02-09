@@ -1,6 +1,6 @@
 # Published website on cloud service Azure:
 
-http://108.142.200.49/
+http://108.142.200.49/ (No longer active)
 
 # Link/Clone-URL to GitHub-repository:
 
