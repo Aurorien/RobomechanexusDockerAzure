@@ -4,10 +4,10 @@ import axios from "axios";
 import robot from "../assets/RobotAtMechanexus.png";
 
 interface ApiResponse {
-  chipid: number;
-  chipname: string;
-  chipuse: string;
-  itemtypename: string;
+  chip_id: number;
+  chip_name: string;
+  chip_use: string;
+  item_type_name: string;
 }
 
 function Home() {
@@ -97,9 +97,17 @@ function Home() {
                 <h2>Registered chips:</h2>
                 <ol className="reg-ol">
                   {data.map((data) => (
-                    <li key={data.chipid}>
-                      <span className="reg-li-label">Name:</span> {data.chipname} <span><span className="reg-li-label">Use:</span> {data.chipuse}</span>
-                      <span><span className="reg-li-label">Type:</span> {data.itemtypename}</span>
+                    <li key={data.chip_id}>
+                      <span className="reg-li-label">Name:</span>{" "}
+                      {data.chip_name}{" "}
+                      <span>
+                        <span className="reg-li-label">Use:</span>{" "}
+                        {data.chip_use}
+                      </span>
+                      <span>
+                        <span className="reg-li-label">Type:</span>{" "}
+                        {data.item_type_name}
+                      </span>
                     </li>
                   ))}
                 </ol>

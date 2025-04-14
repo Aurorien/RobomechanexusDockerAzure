@@ -1,6 +1,6 @@
 import "./App.css";
-import Home from "./components/Home";
-import Registry from "./components/Registry";
+import Home from "./routes/Home";
+import Registry from "./routes/Registry";
 
 import {
   createHashRouter,

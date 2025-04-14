@@ -3,9 +3,9 @@ import "./Home.css";
 import axios from "axios";
 
 interface ApiResponse {
-  chipid: number;
-  chipname: string;
-  chipuse: string;
+  chip_id: number;
+  chip_name: string;
+  chip_use: string;
 }
 
 function Home() {
@@ -46,8 +46,8 @@ function Home() {
             data && (
               <div>
                 <h2>Chip of the day:</h2>
-                <p>Name: {data[2].chipname}</p>
-                <p>Use: {data[2].chipuse}</p>
+                <p>Name: {data[2].chip_name}</p>
+                <p>Use: {data[2].chip_use}</p>
               </div>
             )
           )}
